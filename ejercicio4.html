@@ -96,6 +96,11 @@
       fontSize = fontSize - 1 + "px";
       $("body").css({'font-size':fontSize});
       });
+
+      /*Cambia el color de fondo, se debe elegir*/
+      $('#bgcolor').change(function(){
+      $("body").css("background",$('#bgcolor').val());
+      });
       
     </script>
   </body>
