@@ -89,6 +89,13 @@
       fontSize = fontSize + 1 + "px";
       $("body").css({'font-size':fontSize});
       });
+
+      /*Disminuye el tamaño de la fuente*/
+      $("#font_size_less").click(function() {
+      var fontSize = parseInt($("body").css("font-size"));
+      fontSize = fontSize - 1 + "px";
+      $("body").css({'font-size':fontSize});
+      });
       
     </script>
   </body>
