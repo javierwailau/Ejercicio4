@@ -77,12 +77,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script>
-    
+
       /*Cambia el tipo de fuente*/
       $("#font_family").change(function() {
       $('.container').css("font-family", $(this).val());
       });
 
+      /*Aumenta el tamaño de la fuente*/
+      $("#font_size_more").click(function() {
+      var fontSize = parseInt($("body").css("font-size"));
+      fontSize = fontSize + 1 + "px";
+      $("body").css({'font-size':fontSize});
+      });
+      
     </script>
   </body>
 </html># Tarea4
